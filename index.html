@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+	
+    <title>Ristorante la Vecchia Cantina</title>
+</head>
+
+<body>
+
+	  <!-- Prima pagina - Homr -->
+
+      <div data-role="page" id="home">
+  	   <header data-role="header" data-theme="b">
+   		   <div data-role="navbar">
+   		   		<ul>
+					<li><a href="#home" data-icon="home">Home </a></li>
+					<li><a href="#piatti" data-icon="heart">Specialità</a></li>
+					<li><a href="#contatti" data-icon="mail">Contatti</a></li>
+      			</ul>
+      		</div>		
+		</header>      
+       	<div data-role="main" class="ui-content">
+			 <h2>Ristorante la nuova cantina</h2>
+			 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim iaculis sollicitudin. Aenean in commodo ligula, quis iaculis metus. Sed sed lobortis velit, et ultricies turpis. Curabitur et laoreet risus. Ut ac sodales libero, sed interdum dui. In hac habitasse platea dictumst. Vestibulum non accumsan diam, eu sodales lacus. Nulla vestibulum lectus eget turpis tincidunt ultrices. Mauris elementum interdum posuere. Curabitur eget interdum ipsum, sed dictum est.
+			 </p>
+			 <img src="img/banner_ristorante-1180x210.jpg" class="banner">
+			 <h3 class="ui-bar ui-bar-a ui-icon-shop ui-btn-icon-left ui-corner-all ui-shadow">Le offerte del giorno</h3>
+			 <p class="ui-btn ui-btn-inline">Sabato e domenica pizza gratis</p>
+ 			 <p class="ui-btn ui-btn-inline">Giovedì birra free</p>
+		</div>	 
+		<footer data-role="footer" data-position="fixed" data-theme="b">
+				<h1>&copy 2017 - Ristorante La Vecchia Cantina</h1>	 
+		</footer>
+    </div>	
+	
+	<!-- Seconda pagina - Specialità -->
+
+      <div data-role="page" id="piatti">
+  	   <header data-role="header" data-theme="b">
+   		   <div data-role="navbar">
+   		   		<ul>
+					<li><a href="#home" data-icon="home">Home </a></li>
+					<li><a href="#piatti" data-icon="heart">Specialità</a></li>
+					<li><a href="#contatti" data-icon="mail">Contatti</a></li>
+      			</ul>
+      		</div>		
+		</header>      
+       	<div class="ui-content">
+			 <h2>Specialità</h2>
+			 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim iaculis sollicitudin. Aenean in commodo ligula, quis iaculis metus. Sed sed lobortis velit, et ultricies turpis. Curabitur et laoreet risus. Ut ac sodales libero, sed interdum dui. In hac habitasse platea dictumst. Vestibulum non accumsan diam, eu sodales lacus. Nulla vestibulum lectus eget turpis tincidunt ultrices. Mauris elementum interdum posuere. Curabitur eget interdum ipsum, sed dictum est.
+			 </p>
+			 <img src="img/banner_ristorante-1180x210.jpg" class="banner">
+
+			 <!-- ListView set collassabile -->
+			 
+			 <div data-role="collapsible-set">
+			 	  
+				  <div data-role="collapsible">
+				  	   <h3>Primi piatti</h3>
+					   <ul data-role="listview">
+					   	   <li>Risotto all'astice</li>
+						   <li>Spaghetti alle matriciana</li>
+						   <li>Ribollita</li>
+					   </ul>   
+				  </div>
+			 	  <div data-role="collapsible">
+				  	   <h3>Secondi piatti</h3>
+					   <ul data-role="listview">
+					   	   <li>Agnello alla scottadito</li>
+						   <li>Arrosto misto</li>
+						   <li>Orata alla griglia</li>
+					   </ul>   
+				  </div>
+				  <div data-role="collapsible">
+				  	   <h3>Dessert</h3>
+					   <ul data-role="listview">
+					   	   <li>Tiramisù</li>
+						   <li>Torta della nonna</li>
+						   <li>Gelato artigianale</li>
+					   </ul>   
+				  </div>
+			 </div>
+			 
+			 <div class="ui-grid-a">
+			 	  <div class="ui-block-a">
+			 	  	   <img src="img/icona.jpeg" width="96" height="96" />
+				  </div>
+				   <div class="ui-block-b">
+			 	  	   <h3 class="ui-bar ui-bar-a">Giovedì gnocchi</h3>
+				  </div>
+			 </div>
+		</div>	 
+		<footer data-role="footer" data-position="fixed" data-theme="b">
+				<h1>&copy 2017 - Ristorante La Vecchia Cantina</h1>	 
+		</footer>
+    </div>	
+
+		  <!-- Terza pagina - Contatti -->
+
+      <div data-role="page" id="contatti">
+  	   <header data-role="header" data-theme="b">
+   		   <div data-role="navbar">
+   		   		<ul>
+					<li><a href="#home" data-icon="home">Home </a></li>
+					<li><a href="#piatti" data-icon="heart">Specialità</a></li>
+					<li><a href="#contatti" data-icon="mail">Contatti</a></li>
+      			</ul>
+      		</div>		
+		</header>      
+       	<div class="ui-content">
+			 <h2>Contatti</h2>
+			 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum dignissim iaculis sollicitudin. Aenean in commodo ligula, quis iaculis metus. Sed sed lobortis velit, et ultricies turpis. Curabitur et laoreet risus. Ut ac sodales libero, sed interdum dui. In hac habitasse platea dictumst. Vestibulum non accumsan diam, eu sodales lacus. Nulla vestibulum lectus eget turpis tincidunt ultrices. Mauris elementum interdum posuere. Curabitur eget interdum ipsum, sed dictum est.
+			 </p>
+			 <h3>Per i tuoi pranzi e le tue cene contattaci</h3>
+			 <div>
+			 	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.16410192813!2d12.414028915442142!3d41.91083087921956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f5fca03631c0b%3A0xe8a9fe61662de3be!2sVia+dell&#39;Assunzione%2C+Roma+RM!5e0!3m2!1sit!2sit!4v1510772740893" width="350" height="300" frameborder="0" style="border:0"></iframe>
+			 </div>
+			 <h3>Indirizzo</h3>
+			 <ul>
+			 	 <li>Via dell'Assunzione, 15</li>
+				 <li>Via Roma, 25</li>
+				 <li>Via Lansiani, 2</li>
+			 </ul>
+		</div>	 
+		<footer data-role="footer" data-position="fixed" data-theme="b">
+				<h1>&copy 2017 - Ristorante La Vecchia Cantina</h1>	 
+		</footer>
+    </div>	
+	
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+    
+	<script type="text/javascript" src="js/index.js"></script>
+    
+</body>
+
+</html>
